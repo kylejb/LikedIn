@@ -1,4 +1,4 @@
-from linkedin.linkedin_api import LinkedinAuthentication, LinkedinAPI, PERMISSIONS
+from linkedin.api.linkedin_api import LinkedinAuthentication, LinkedinAPI, PERMISSIONS
 
 
 if __name__ == "__main__":

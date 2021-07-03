@@ -1,5 +1,4 @@
 """Linkedin API Wrapper."""
-__version__ = "0.1.0"
 
 import collections
 import contextlib
@@ -8,8 +7,8 @@ import random
 import requests
 
 from io import StringIO
-from .utils import enum, raise_for_error, to_utf8
 from urllib.parse import quote
+from .utils import enum, raise_for_error, to_utf8
 
 __all__ = ["LinkedinAuthentication", "LinkedinAPI", "PERMISSIONS"]
 
@@ -50,30 +49,6 @@ class LinkedinAPI:
         if not self.authentication:
             self.authentication = LinkedinAuthentication("", "", "")
             self.authentication.token = AccessToken(token, None)
-
-    def make_request(
-        self, method, url, data=None, params=None, headers=None, timeout=60
-    ):
-        if headers is None:
-            headers = {
-                "X-Restli-Protocol-Version": "2.0.0",
-                "Content-Type": "application/json",
-                "Authorization": f"Bearer {self.authentication.token.access_token}",
-            }
-        else:
-            headers.update(
-                {
-                    "X-Restli-Protocol-Version": "2.0.0",
-                    "Content-Type": "application/json",
-                }
-            )
-        kw = {"data": data, "params": params, "headers": headers, "timeout": timeout}
-        return requests.request(method.upper(), url, **kw)
-
-    def get_basic_profile(self):
-        response = self.make_request("GET", ENDPOINTS.ME)
-        raise_for_error(response)
-        return response.json()
 
 
 AccessToken = collections.namedtuple("AccessToken", ["access_token", "expires_in"])

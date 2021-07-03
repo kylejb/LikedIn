@@ -1,7 +1,7 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from urllib.parse import urlparse
 
-from linkedin.linkedin_api import LinkedinAPI, LinkedinAuthentication, PERMISSIONS
+from linkedin.api.linkedin_api import LinkedinAPI, LinkedinAuthentication, PERMISSIONS
 
 
 def quick_api(api_key, secret_key, port=8000):

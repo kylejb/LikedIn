@@ -1,4 +1,4 @@
-from app.app import __version__
+from linkedin import __version__
 
 
 def test_version():
