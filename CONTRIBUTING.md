@@ -8,5 +8,5 @@ Read our [Code of Conduct](CODE_OF_CONDUCT.md) before you contribute, as being p
 
 ## Guidelines
 
-- [Open an issue!](https://github.com/kylejb/like-linkedin-posts/issues/new)
+- [Open an issue!](https://github.com/kylejb/likedin/issues/new)
 - Open a pull request!
