@@ -1,8 +1,8 @@
-# LinkedIn API Wrapper - Like Posts
+# LikedIn
 
-Automatically like your favorite company's posts on LinkedIn.
+Automatically like your favorite company's posts on Linkedin in batches.
 
-## Environment variables
+## Environment Variables
 
 Create a `.env` file in the root folder with the following keys:
 
