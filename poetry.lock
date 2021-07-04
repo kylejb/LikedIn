@@ -72,6 +72,17 @@ python-versions = ">=3.6"
 pyparsing = ">=2.0.2"
 
 [[package]]
+name = "pawl"
+version = "0.0.1"
+description = "PAWL (an acronym for `Python API Wrapper - LinkedIn`) allows for simple access to LinkedIn's API."
+category = "main"
+optional = false
+python-versions = ">=3.9,<4.0"
+
+[package.dependencies]
+requests = ">=2.25.1,<3.0.0"
+
+[[package]]
 name = "pluggy"
 version = "0.13.1"
 description = "plugin and hook calling mechanisms for python"
@@ -162,7 +173,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "b343fa264413e20968b1f008989854b696fbd28d480781241dea66801d436cbf"
+content-hash = "5126f200e4e38cd69478e5298fa63cb299837071589b7fa3dbcd489d422104b5"
 
 [metadata.files]
 atomicwrites = [
@@ -195,6 +206,10 @@ more-itertools = [
 packaging = [
     {file = "packaging-21.0-py3-none-any.whl", hash = "sha256:c86254f9220d55e31cc94d69bade760f0847da8000def4dfe1c6b872fd14ff14"},
     {file = "packaging-21.0.tar.gz", hash = "sha256:7dc96269f53a4ccec5c0670940a4281106dd0bb343f47b7471f779df49c2fbe7"},
+]
+pawl = [
+    {file = "pawl-0.0.1-py3-none-any.whl", hash = "sha256:292bb90c05c379420478ef85f7e5b0df0ed64502947e300334b1df4f3323a4b4"},
+    {file = "pawl-0.0.1.tar.gz", hash = "sha256:e0d39f1d36e6870d57fc39ee36e969786519de136b7a6deadaa231256103fe39"},
 ]
 pluggy = [
     {file = "pluggy-0.13.1-py2.py3-none-any.whl", hash = "sha256:966c145cd83c96502c3c3868f50408687b38434af77734af1e9ca461a4081d2d"},
