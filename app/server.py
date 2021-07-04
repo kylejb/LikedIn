@@ -1,24 +1,23 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from urllib.parse import urlparse
 
-from linkedin.api.linkedin_api import LinkedinAPI, LinkedinAuthentication, PERMISSIONS
-
 
 def quick_api(api_key, secret_key, port=8000):
     """Authenticate with Linkedin API."""
-    auth = LinkedinAuthentication(
-        api_key,
-        secret_key,
-        "http://localhost:8000/v1/callback",
-        PERMISSIONS.enums.values(),
-    )
+    # auth = LinkedinAuthentication(
+    #     api_key,
+    #     secret_key,
+    #     "http://localhost:8000/v1/callback",
+    #     PERMISSIONS.enums.values(),
+    # )
 
-    app = LinkedinAPI(authentication=auth)
+    # app = LinkedinAPI(authentication=auth)
 
-    print(f"Linkedin Auth URL: {auth.authorization_url}")
-    _wait_for_user_to_enter_browser(app, port)
+    # print(f"Linkedin Auth URL: {auth.authorization_url}")
+    # _wait_for_user_to_enter_browser(app, port)
 
-    return app
+    # return app
+    ...
 
 
 def _wait_for_user_to_enter_browser(app, port):

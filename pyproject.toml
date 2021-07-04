@@ -6,7 +6,7 @@ authors = ["kylejb <47502769+kylejb@users.noreply.github.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-requests = "^2.25.1"
+pawl = "^0.0.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
