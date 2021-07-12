@@ -5,6 +5,10 @@
 *.env
 .env.*
 
+## Token Management
+app/tokens/*
+!.gitkeep
+
 ## Logs
 *.log
 pip-log.txt
