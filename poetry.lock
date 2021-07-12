@@ -73,7 +73,7 @@ pyparsing = ">=2.0.2"
 
 [[package]]
 name = "pawl"
-version = "0.0.1"
+version = "0.1.1"
 description = "PAWL (an acronym for `Python API Wrapper - LinkedIn`) allows for simple access to LinkedIn's API."
 category = "main"
 optional = false
@@ -132,6 +132,17 @@ checkqa-mypy = ["mypy (==v0.761)"]
 testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "requests", "xmlschema"]
 
 [[package]]
+name = "python-dotenv"
+version = "0.18.0"
+description = "Read key-value pairs from a .env file and set them as environment variables"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+cli = ["click (>=5.0)"]
+
+[[package]]
 name = "requests"
 version = "2.25.1"
 description = "Python HTTP for Humans."
@@ -173,7 +184,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "5126f200e4e38cd69478e5298fa63cb299837071589b7fa3dbcd489d422104b5"
+content-hash = "66949ed84b1a127722ad2bd1319b9ad37e9f1c29f1af6a9796d35c332930184f"
 
 [metadata.files]
 atomicwrites = [
@@ -208,8 +219,8 @@ packaging = [
     {file = "packaging-21.0.tar.gz", hash = "sha256:7dc96269f53a4ccec5c0670940a4281106dd0bb343f47b7471f779df49c2fbe7"},
 ]
 pawl = [
-    {file = "pawl-0.0.1-py3-none-any.whl", hash = "sha256:292bb90c05c379420478ef85f7e5b0df0ed64502947e300334b1df4f3323a4b4"},
-    {file = "pawl-0.0.1.tar.gz", hash = "sha256:e0d39f1d36e6870d57fc39ee36e969786519de136b7a6deadaa231256103fe39"},
+    {file = "pawl-0.1.1-py3-none-any.whl", hash = "sha256:2d64c7ebb05f668ab1acf626b911f7eefe17277987378c1be730e8e520e9d76c"},
+    {file = "pawl-0.1.1.tar.gz", hash = "sha256:855354aaa2923130bf3ba8f780898c7eea8812677f545a59872ef607831df22c"},
 ]
 pluggy = [
     {file = "pluggy-0.13.1-py2.py3-none-any.whl", hash = "sha256:966c145cd83c96502c3c3868f50408687b38434af77734af1e9ca461a4081d2d"},
@@ -226,6 +237,10 @@ pyparsing = [
 pytest = [
     {file = "pytest-5.4.3-py3-none-any.whl", hash = "sha256:5c0db86b698e8f170ba4582a492248919255fcd4c79b1ee64ace34301fb589a1"},
     {file = "pytest-5.4.3.tar.gz", hash = "sha256:7979331bfcba207414f5e1263b5a0f8f521d0f457318836a7355531ed1a4c7d8"},
+]
+python-dotenv = [
+    {file = "python-dotenv-0.18.0.tar.gz", hash = "sha256:effaac3c1e58d89b3ccb4d04a40dc7ad6e0275fda25fd75ae9d323e2465e202d"},
+    {file = "python_dotenv-0.18.0-py2.py3-none-any.whl", hash = "sha256:dd8fe852847f4fbfadabf6183ddd4c824a9651f02d51714fa075c95561959c7d"},
 ]
 requests = [
     {file = "requests-2.25.1-py2.py3-none-any.whl", hash = "sha256:c210084e36a42ae6b9219e00e48287def368a26d03a048ddad7bfee44f75871e"},
